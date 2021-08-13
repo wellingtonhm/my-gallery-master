@@ -1,0 +1,69 @@
+html {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+    height: 100%; 
+}
+
+
+/**** HEADER ****/
+
+/* Structure Header */
+
+.profile {
+        display: grid;
+}
+
+
+.image-profile{
+    max-width: 9.75rem;
+    max-height: 9.75rem;
+}
+
+.information {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/**** MAIN ****/
+
+/* Structure Main */
+.gallery{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.image2 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.image3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.image4 {
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.image5{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.image6{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+/**** FOOTER ****/
+
+
+/**** DESKTOP ****/
