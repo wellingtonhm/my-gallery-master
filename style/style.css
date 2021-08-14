@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+html {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif; ;
+}
+
+body{
+    margin: 1.875rem 1rem ;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.75rem;
+}
+
+
+/**** HEADER ****/
+
+/* Structure Header */
+
+.profile {
+    display: grid;
+    justify-items: center;
+    margin-bottom: 0.75rem;
+}
+
+.profile p{
+    margin: 0;
+    font-size: 0.625rem;
+    font-weight: 600;
+    color: #A9A9A9;
+}
+
+.profile p:nth-child(2){
+    margin-top: 0.75rem;
+    margin-bottom: 0.25rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #4E5150;
+}
+
+
+
+.image-profile {
+    max-width: 9.75rem;
+    max-height: 9.75rem;
+}
+
+.information {
+    display: grid;
+    grid-template-columns: max-content max-content max-content;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.information-content {
+    background: #E5E5E5;
+    border-radius: 0.75rem;
+    padding: 0.75rem 1rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.information-content p{
+    margin: 0;
+    padding: 0;
+    color: #4E5150;
+}
+
+.information-content p:nth-child(2){
+    color: #BDBDBD;
+}
+
+/**** MAIN ****/
+
+/* Structure Main */
+.gallery {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1rem;
+   
+}
+
+.image2 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.image3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.image4 {
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.image5 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.image6 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+/**** FOOTER ****/
+.copyright-create {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #BDBDBD;
+    text-align: center;
+
+}
+
+/**** DESKTOP ****/
+
+@media(min-width: 720px){
+
+    body{
+        max-width: 60rem;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin-top: 3.75rem;
+    }
+
+    .information {
+        gap: 1.2rem;
+    }
+    
+    .gallery {
+        gap: 1.2rem;
+       
+    }
+
+    .profile p{
+        font-size: 0.875rem;
+    }
+    
+    .profile p:nth-child(2){
+        font-size: 1.5rem;
+    }
+
+    .information-content {
+        padding: 1rem 1.2rem;
+        font-size: 1.125rem;
+
+    }
+
+    .information-content p:nth-child(2){
+        font-size: 0.875rem;
+    }
+}
